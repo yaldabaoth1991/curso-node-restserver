@@ -2,10 +2,11 @@ const { response } = require('express');
 
 const userGet =  (req, res= response) => {
 
-    const param = req.query;
+    const query = req.query;
         res.send({
             ok: true,
-            msg: 'Get API - Controlador'
+            msg: 'Get API - Controlador',
+            query
         });
     };
 
